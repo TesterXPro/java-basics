@@ -53,7 +53,7 @@ public class Employee {
 		 Employee e1 = new Employee(2,"John",20000,20);
 		 e1.display();*/
 		 
-		 //Assigning value to class variables using method
+		 //Assigning value to class variables using method---third method
 		 Employee e= new Employee();
 		 e.setData(1, "Raj", 20000,20);
 		 e.display();
