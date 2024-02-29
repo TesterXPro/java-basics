@@ -61,6 +61,8 @@ public class StringMethods {
 		System.out.println(amount.replace("$", "").replace(",",""));
 		
 		
+		
+		
 	
 
 	}
