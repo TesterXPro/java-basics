@@ -5,9 +5,9 @@ import java.util.Arrays;
 public class StringMethods {
 
 	public static void main(String[] args) {
-		String s = "welcome";
+		//String s = "welcome";
 		//to find the length of a string
-		System.out.println(s.length());
+		//System.out.println(s.length());
 		
 		String s1="  welcome  ";
 		String s2="to ";
@@ -46,7 +46,7 @@ public class StringMethods {
 		
 		//substring
 		String s8 = "selenium";
-		System.out.println(s8.substring(0, 3));
+		System.out.println(s8.substring(0,3));
 		System.out.println(s8.substring(4,8));
 		
 		//split
@@ -56,9 +56,37 @@ public class StringMethods {
 		System.out.println(a[0]);
 		System.out.println(a[1]);
 		
+		//to lower case
+		String color = "BLUE";
+		System.out.println(color.toLowerCase());
+		
+		//ex1
 		String amount = "$15,20,25";
 		System.out.println(amount.replace("$", ""));
 		System.out.println(amount.replace("$", "").replace(",",""));
+		
+		//ex2
+		String s = "abc,123@xyz";
+		String[] arr1 = s.split(",");
+		System.out.println(Arrays.toString(arr1));
+		String[] arr2 = arr1[1].split("@");
+		System.out.println(Arrays.toString(arr2));
+		
+		System.out.println(arr1[0]);
+		System.out.println(arr2[0]);
+		System.out.println(arr2[1]);
+		
+		//ex3
+		String s10 = "abc 123 xyz";
+		String[]b = s10.split(" ");
+		System.out.println(Arrays.toString(b));
+		
+		//ex4
+		String name = "John kenedy";
+		System.out.println(name.contains("john"));
+		System.out.println(name.replace('J', 'j').contains("john"));
+		System.out.println(name.toLowerCase().contains("john"));
+		
 		
 		
 		
